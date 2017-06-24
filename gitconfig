@@ -1,0 +1,9 @@
+[user]
+	name = Chris Baker
+	email = dosman711@gmail.com
+[core]
+	editor = vim
+[alias]
+	co = checkout
+	cob = checkout -b
+	st = status
