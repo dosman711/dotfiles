@@ -7,3 +7,4 @@
 	co = checkout
 	cob = checkout -b
 	st = status
+	com = checkout master
