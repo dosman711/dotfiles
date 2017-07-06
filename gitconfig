@@ -1,6 +1,10 @@
 [user]
 	name = Chris Baker
 	email = dosman711@gmail.com
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
 [core]
 	editor = vim
 [alias]
@@ -8,3 +12,8 @@
 	cob = checkout -b
 	st = status
 	com = checkout master
+[merge]
+  tool = vimdiff
+[diff]
+  tool = vimdiff
+
