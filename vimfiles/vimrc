@@ -1,0 +1,39 @@
+" Syntax Hilighting
+syntax on
+set encoding=utf-8
+
+set tabstop=2 
+set shiftwidth=2 
+set softtabstop=2 
+set expandtab 
+set smarttab
+
+" Smart indenting, based on the typed code.
+set smartindent
+set autoindent
+
+" Use the system clipboard if available
+set clipboard=unnamed
+
+" Allows hidden buffers
+set hidden
+
+" Make Vim able to edit crontab files again.
+set backupskip=/tmp/*,/private/tmp/*
+set backup                        " enable backups
+set undodir=~/.vim/tmp/undo//     " undo files
+set backupdir=~/.vim/tmp/backup// " backups
+set directory=~/.vim/tmp/swap//   " swap files
+" Make those folders automatically if they don't already exist.
+if !isdirectory(expand(&undodir))
+    call mkdir(expand(&undodir), "p")
+endif
+if !isdirectory(expand(&backupdir))
+    call mkdir(expand(&backupdir), "p")
+endif
+if !isdirectory(expand(&directory))
+    call mkdir(expand(&directory), "p")
+endif
+
+" Set a pleasing colorscheme
+colorscheme slate
