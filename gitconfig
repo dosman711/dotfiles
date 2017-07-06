@@ -1,10 +1,11 @@
+; vim: set noet:
 [user]
 	name = Chris Baker
 	email = dosman711@gmail.com
 [color "status"]
-  added = yellow
-  changed = green
-  untracked = cyan
+	added = yellow
+	changed = green
+	untracked = cyan
 [core]
 	editor = vim
 [alias]
@@ -13,7 +14,8 @@
 	st = status
 	com = checkout master
 [merge]
-  tool = vimdiff
+	tool = vimdiff
 [diff]
-  tool = vimdiff
-
+	tool = vimdiff
+[push]
+	default = simple
