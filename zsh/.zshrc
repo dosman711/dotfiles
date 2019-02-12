@@ -5,6 +5,7 @@ while [ -h "$SOURCE" ]; do
   [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
 done
 export DOTFILES_DIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+export PATH=~/.local/bin:$PATH
 
 PROMPT='
 %m: %F{154}%~%f
@@ -23,9 +24,9 @@ SAVEHIST=10000
 bindkey -v
 # End of lines configured by zsh-newuser-install
 
-
-export NVM_DIR="$HOME/.nvm"
-. "/usr/local/opt/nvm/nvm.sh"
+# TODO Make this platform-agnostic
+# export NVM_DIR="$HOME/.nvm"
+# . "/usr/local/opt/nvm/nvm.sh"
 
 # Aliases
 if (( $+commands[tmux] )); then

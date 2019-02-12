@@ -5,3 +5,4 @@ while [ -h "$SOURCE" ]; do
   [[ $SOURCE != /* ]] && SOURCE="$DIR/$SOURCE"
 done
 export ZDOTDIR="$( cd -P "$( dirname "$SOURCE" )" && pwd )"
+export TEST=foo
