@@ -1,2 +1,5 @@
+nvim/plugged/
 vimfiles/tmp
 zsh/.zcompdump
+nvim/.netrwhist
+zsh/.zshrc.local

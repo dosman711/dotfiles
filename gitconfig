@@ -1,13 +1,14 @@
 ; vim: set noet:
 [user]
 	name = Chris Baker
-	email = dosman711@gmail.com
+	email = chris.baker@discoverorg.com
 [color "status"]
 	added = yellow
 	changed = green
 	untracked = cyan
 [core]
-	editor = vim
+	editor = nvim
+	autocrlf = input
 [alias]
 	co = checkout
 	cob = checkout -b
@@ -15,7 +16,15 @@
 	com = checkout master
 [merge]
 	tool = vimdiff
+	conflictstyle = diff3
 [diff]
 	tool = vimdiff
 [push]
 	default = simple
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[mergetool "vimdiff"]
+	cmd = nvim -d $BASE $LOCAL $REMOTE $MERGED -c '$wincmd w' -c 'wincmd J'
