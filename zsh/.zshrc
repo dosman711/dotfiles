@@ -7,8 +7,7 @@ done
 export DOTFILES_DIR="$( cd -P "$( dirname "$SOURCE" )/.." && pwd )"
 export PATH=~/.local/bin:$PATH
 
-PROMPT='
-%m: %F{154}%~%f
+PROMPT='%m: %F{154}%~%f
 %F{bold}%F{cyan}$%f '
 
 # Aliases
